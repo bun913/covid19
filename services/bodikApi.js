@@ -11,21 +11,24 @@ const nagasakiCityNewsId = 'eb0ba50a-7a97-4029-9b75-9c6bab0568f6'
 
 const nagasakiOtherInfoId = '438f03f1-0ee8-466d-a5d9-e874f5367507'
 
-export const fetchNagasakiPrefectureTestedCases = () =>
-  callFetchJsonp(baseUrl, nagasakiPrefectureTestedCasesId)
-export const fetchNagasakiPrefectureConfirmedCases = () =>
-  callFetchJsonp(baseUrl, nagasakiPrefectureConfirmedCasesId)
-export const fetchNagasakiCityNews = () =>
-  callFetchJsonp(baseUrl, nagasakiCityNewsId)
+const limit = 1000
 
+export const fetchNagasakiPrefectureTestedCases = () =>
+  callFetchJsonp(baseUrl, nagasakiPrefectureTestedCasesId, { limit })
+export const fetchNagasakiPrefectureConfirmedCases = () =>
+  callFetchJsonp(baseUrl, nagasakiPrefectureConfirmedCasesId, { limit })
+export const fetchNagasakiCityNews = () =>
+  callFetchJsonp(baseUrl, nagasakiCityNewsId, { limit })
 export const fetchNagasakiOtherInfo = () =>
-  callFetchJsonp(baseUrl, nagasakiOtherInfoId)
+  callFetchJsonp(baseUrl, nagasakiOtherInfoId, { limit })
 
 export const axiosNagasakiPrefectureTestedCases = axios =>
-  axios.$get(baseUrl + nagasakiPrefectureTestedCasesId)
+  axios.$get(baseUrl + nagasakiPrefectureTestedCasesId, { params: { limit } })
 export const axiosNagasakiPrefectureConfirmedCases = axios =>
-  axios.$get(baseUrl + nagasakiPrefectureConfirmedCasesId)
+  axios.$get(baseUrl + nagasakiPrefectureConfirmedCasesId, {
+    params: { limit }
+  })
 export const axiosNagasakiCityNews = axios =>
-  axios.$get(baseUrl + nagasakiCityNewsId)
+  axios.$get(baseUrl + nagasakiCityNewsId, { params: { limit } })
 export const axiosNagasakiOtherInfo = axios =>
-  axios.$get(baseUrl + nagasakiOtherInfoId)
+  axios.$get(baseUrl + nagasakiOtherInfoId, { params: { limit } })
