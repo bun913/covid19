@@ -7,29 +7,6 @@
         </v-icon>
         {{ $t('最新のお知らせ') }}
       </h3>
-      <span class="WhatsNew-link-to-emergency-page">
-        <v-icon size="20" class="WhatsNew-link-to-emergency-page-icon">
-          mdi-bullhorn
-        </v-icon>
-        <external-link
-          url="https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_onegai/"
-        >
-          {{ $t('東京都緊急事態措置について') }}
-        </external-link>
-      </span>
-
-      <span class="alert">
-        <a
-          target="_blank"
-          rel="noopener"
-          class="alert"
-          href="https://twitter.com/ngs_ken_iryou"
-        >
-          <span class="alert">{{
-            $t('※長崎県医療政策課のTwitter情報を表示しています')
-          }}</span></a
-        >
-      </span>
     </div>
     <ul class="WhatsNew-list">
       <li v-for="(item, i) in newsItems" :key="i" class="WhatsNew-list-item">
