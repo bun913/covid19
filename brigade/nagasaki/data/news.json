@@ -1,6 +1,11 @@
 {
     "newsItems": [
       {
+        "date": "2020/06/27",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/cocoa_00138.html",
+        "text": "新型コロナウイルス接触確認アプリ(COCOA)のダウンロードにご協力下さい。利用者は陽性者と接触した可能性が分かることで、検査の受診など保健所のサポートを早く受けることができます。"
+      },
+      {
         "date": "2020/06/11",
         "url": "https://www.pref.nagasaki.jp/object/kenkaranooshirase/oshirase/443605.html",
         "text": "新型コロナウイルス感染症対策のため、多くの皆様からご寄附や物資の寄贈などのご支援をいただいております。感染拡大の防止や医療提供体制の充実などの対策に活用させていただくため、寄附金の口座を開設いたしました。ご支援、ご協力をお願いいたします。"
