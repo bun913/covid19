@@ -11,8 +11,8 @@ export function mapToPatientsNotCruise(otherData) {
     検査実施人数: 0,
     陽性者数: 感染者数 ? Number(感染者数[0].VALUE) : 0,
     入院中: 入院者数 ? Number(入院者数[0].VALUE) : 0,
-    軽症中等症: 0,
-    重症: 0,
+    軽症中等症: '-',
+    重症: '-',
     死亡: 死亡者数 ? Number(死亡者数[0].VALUE) : 0,
     退院: 退院者数 ? Number(退院者数[0].VALUE) : 0
   }
