@@ -363,5 +363,8 @@
   "長崎県 新型コロナウイルス感染症 対策サイト": "Nagasaki COVID-19 Information",
   "長崎県アイキャッチ画像": "Hokkaido eye-catch image",
   "長崎県・長崎市": "Nagasaki Prefecture. Nagasaki City.",
-  "長崎県内の新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するサイトです。": "This site provides regularly updated information about COVID-19 in Nagasaki."
+  "長崎県内の新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するサイトです。": "This site provides regularly updated information about COVID-19 in Nagasaki.",
+  "（注）軽中重症人数はデータが無いため表示していません": "(Note) No data available for mild, moderate and severe cases",
+  "（注）「入院中」には、入院調整中・宿泊療養に移行した方を含む": "(Note) 'In-hospital' includes those undergoing hospitalization adjustments and transitioning to accommodation treatment",
+  "（注）退院者数の把握には一定の期間を要しており、確認次第数値を更新している": "(Note) It takes a certain period of time to grasp the number of hospital discharges, and the value will be updated once confirmed."
 }
