@@ -1,11 +1,11 @@
 /*!
-  * vue-router v3.1.6
+  * vue-router v3.3.4
   * (c) 2020 Evan You
   * @license MIT
   */
 
 /*!
-  * vue-scrollto v2.17.1
+  * vue-scrollto v2.18.1
   * (c) 2019 Randjelovic Igor
   * @license MIT
   */
@@ -45,7 +45,7 @@
  */
 
 /*!
- * vue-i18n v8.15.4 
+ * vue-i18n v8.19.0 
  * (c) 2020 kazuya kawaguchi
  * Released under the MIT License.
  */
@@ -56,7 +56,13 @@
  * Released under the MIT License.
  */
 
-/*! axe v3.5.1
+/*!
+ * vuex v3.5.1
+ * (c) 2020 Evan You
+ * @license MIT
+ */
+
+/*! axe v3.5.3
  * Copyright (c) 2020 Deque Systems, Inc.
  *
  * Your use of this Source Code Form is subject to the terms of the Mozilla Public
@@ -66,10 +72,4 @@
  * This entire copyright notice must appear in every copy of this file you
  * distribute or in any file that contains substantial portions of this source
  * code.
- */
-
-/**
- * vuex v3.1.2
- * (c) 2019 Evan You
- * @license MIT
  */
