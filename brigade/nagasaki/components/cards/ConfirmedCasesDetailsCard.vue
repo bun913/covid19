@@ -24,6 +24,9 @@
               )
             }}
           </li>
+          <li>
+            {{ $t('（注）軽中重症人数はデータが無いため表示していません') }}
+          </li>
         </ul>
       </template>
       <confirmed-cases-details-table
