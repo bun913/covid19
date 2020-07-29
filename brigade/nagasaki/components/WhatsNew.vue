@@ -40,7 +40,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import ExternalLink from '@/components/ExternalLink.vue'
 
 import {
   convertDateByCountryPreferTimeFormat,
@@ -48,7 +47,7 @@ import {
 } from '@/utils/formatDate'
 
 export default Vue.extend({
-  components: { ExternalLink },
+  components: {},
   props: {
     items: {
       type: Array,
@@ -57,7 +56,7 @@ export default Vue.extend({
   },
   computed: {
     newsItems() {
-      return this.items.slice(0, 5)
+      return this.items.slice(0, 10)
     }
   },
   methods: {
