@@ -1,6 +1,36 @@
 {
     "newsItems": [
       {
+        "date": "2020/07/29",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/07/1596009650.pdf",
+        "text": "7月28日（火）諫早市において確認された長崎県内60例目、61例目の新型コロナウイルス感染症の陽性者についてのプレスリリースです。"
+      },
+      {
+        "date": "2020/07/29",
+        "url": "https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/documents/houdouhaihusiryou9reime2hou.pdf",
+        "text": "7月28日（火）に佐世保市で確認された長崎県内59例目の新型コロナウイルス感染症の陽性者に関する佐世保市プレスリリースです。"
+      },
+      {
+        "date": "2020/07/28",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/07/1595932434.pdf",
+        "text": "7月27日（月）諫早市において確認された長崎県内58例目の新型コロナウイルス感染症の陽性者についてのプレスリリースです。"
+      },
+      {
+        "date": "2020/07/28",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/07/1595932434.pdf",
+        "text": "7月27日（月）諫早市において確認された長崎県内58例目の新型コロナウイルス感染症の陽性者についてのプレスリリースです。"
+      },
+      {
+        "date": "2020/07/28",
+        "url": "https://twitter.com/ngs_ken_iryou/status/1288072286264672258",
+        "text": "7月28日（火）佐世保市において長崎県内59例目の新型コロナウイルス感染症の陽性者（54例目の濃厚接触者）が確認されました。"
+      },
+      {
+        "date": "2020/07/28",
+        "url": "https://www.city.nagasaki.lg.jp/fukushi/450000/454000/p034301_d/fil/R20728.pdf",
+        "text": "長崎市において確認された長崎県内55例目、56例目、57例目の新型コロナウイルス感染症の陽性者に関する長崎市のプレスリリースです。"
+      },
+      {
         "date": "2020/07/27",
         "url": "https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/documents/houdouhaihusiryou020727_2000.pdf",
         "text": "7月27日（月）佐世保市において長崎県内54例目の新型コロナウイルス感染症の陽性者が確認されました。佐世保市のプレスリリースです。"
