@@ -1,6 +1,26 @@
 {
     "newsItems": [
       {
+        "date": "2020-07-30",
+        "url": "https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/documents/houdouhaihusiryou10reime2hou.pdf",
+        "text": "7月30日（木）佐世保市において確認された長崎県内65例目の新型コロナウイルス感染症の陽性者に関するプレスリリースです。"
+      },
+      {
+        "date": "2020-07-30",
+        "url": "https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/documents/houdouhaihusiryou11reime2hou.pdf",
+        "text": "66例目の陽性者に関するプレスリリースです。"
+      },
+      {
+        "date": "2020-07-30",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/07/1596096073.pdf",
+        "text": "7月29日（水）対馬市において確認された長崎県内62例目、諫早市において確認された63、64例目の新型コロナウイルス感染症の陽性者に関するプレスリリースです"
+      },
+      {
+        "date": "2020-07-30",
+        "url": "",
+        "text": "7月29日（水）対馬市において長崎県内62例目、諫早市において63例目、64例目の新型コロナウイルス感染症の陽性者が確認されました。"
+      },
+      {
         "date": "2020-07-29",
         "url": "https://www.pref.nagasaki.jp/shared/uploads/2020-07-1596009650.pdf",
         "text": "7月28日（火）諫早市において確認された長崎県内60例目、61例目の新型コロナウイルス感染症の陽性者についてのプレスリリースです。"
