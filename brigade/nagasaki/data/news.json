@@ -1,6 +1,11 @@
 {
     "newsItems": [
       {
+        "date": "2020-07-31",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/07/1596182441.pdf",
+        "text": "7月30日（木）諫早市、大村市において確認された長崎県内67例目、68例目、69例目、70例目の新型コロナウイルス感染症の陽性者に関するプレスリリースです"
+      },
+      {
         "date": "2020-07-30",
         "url": "https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/documents/houdouhaihusiryou10reime2hou.pdf",
         "text": "7月30日（木）佐世保市において確認された長崎県内65例目の新型コロナウイルス感染症の陽性者に関するプレスリリースです。"
