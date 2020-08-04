@@ -1,6 +1,21 @@
 {
     "newsItems": [
       {
+        "date": "2020-08-04",
+        "url": "https://www.city.sasebo.lg.jp/hokenhukusi/kenkou/documents/hodouhaihusiryou15reime2.pdf",
+        "text": "長崎県内135例目に関する佐世保市のプレスリリースです。"
+      },
+      {
+        "date": "2020-08-04",
+        "url": "https://www.city.nagasaki.lg.jp/fukushi/450000/454000/p034301_d/fil/R20804.pdf",
+        "text": "長崎県内131から134例目に関する長崎市のプレスリリースです。"
+      },
+      {
+        "date": "2020-08-04",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/08/1596528719.pdf",
+        "text": "8月3日（月）に確認された長崎県内118例目から130例目の新型コロナウイルス感染症の陽性者に関するプレスリリースです。"
+      },
+      {
         "date": "2020-08-03",
         "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/08/1596442326.pdf",
         "text": "8月2日（日）に確認された長崎県内113例目から117例目の新型コロナウイルス感染症の陽性者に関するプレスリリースです。"
