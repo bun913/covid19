@@ -2,6 +2,11 @@
     "newsItems": [
       {
         "date": "2020-08-06",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/08/1596703622.pdf",
+        "text": "長崎県内141から143例目のプレスリリースです。"
+      },
+      {
+        "date": "2020-08-06",
         "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/08/1596614429.pdf",
         "text": "長崎県内138から140例目に関するプレスリリースです。"
       },
