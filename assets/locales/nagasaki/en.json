@@ -1,7 +1,6 @@
 {
   "都内の最新感染動向": "Latest updates on COVID-19 in Nagasaki",
   "県内の最新感染動向": "Latest updates on COVID-19 in Nagasaki",
-  "県民の皆様へ": "To the residents of Nagasaki",
   "新型コロナコールセンター相談件数": "Number of calls to the Nagasaki Novel Coronavirus Call Center",
   "都庁来庁者数の推移": "Number of visitors to the Nagasaki Prefecture Government buildings",
   "都内発生（※1）": "Found in Nagasaki (*1)",
@@ -78,5 +77,7 @@
   "長崎県内の新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するサイトです。": "This site provides regularly updated information about COVID-19 in Nagasaki.",
   "（注）軽中重症人数はデータが無いため表示していません": "(Note) No data available for mild, moderate and severe cases",
   "（注）「入院中」には、入院調整中・宿泊療養に移行した方を含む": "(Note) 'In-hospital' includes those undergoing hospitalization adjustments and transitioning to accommodation treatment",
-  "（注）退院者数の把握には一定の期間を要しており、確認次第数値を更新している": "(Note) It takes a certain period of time to grasp the number of hospital discharges, and the value will be updated once confirmed."
+  "（注）退院者数の把握には一定の期間を要しており、確認次第数値を更新している": "(Note) It takes a certain period of time to grasp the number of hospital discharges, and the value will be updated once confirmed.",
+  "県民の皆様へ": "To the residents of Nagasaki",
+  "新型コロナウイルス感染症について": "Nagasaki Prefecture Covid19 Page"
 }

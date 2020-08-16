@@ -20,7 +20,6 @@
               <span>{{ $t('入院中') }}</span>
               <span>
                 <strong>{{ 入院中.toLocaleString() }}</strong>
-                <span :class="$style.unit">{{ $t('人') }}</span>
               </span>
             </div>
           </div>
@@ -33,7 +32,6 @@
                   <!-- eslint-enable vue/no-v-html-->
                   <span>
                     <strong>{{ 軽症中等症.toLocaleString() }}</strong>
-                    <span :class="$style.unit">{{ $t('人') }}</span>
                   </span>
                 </div>
               </div>
@@ -44,7 +42,6 @@
                   <span>{{ $t('重症') }}</span>
                   <span>
                     <strong>{{ 重症.toLocaleString() }}</strong>
-                    <span :class="$style.unit">{{ $t('人') }}</span>
                   </span>
                 </div>
               </div>
