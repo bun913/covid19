@@ -1,6 +1,21 @@
 {
     "newsItems": [
       {
+        "date": "2020-08-16",
+        "url": "https://twitter.com/ngs_ken_iryou",
+        "text": "ニュースの更新が多くなってきましたので今後の最新の情報は長崎県医療政策課からのTwitterをご覧ください。"
+      },
+      {
+        "date": "2020-08-16",
+        "url": "",
+        "text": "陽性者増から検査陽性者の入院中データの更新が止まりましたので表示をーに変更しました。"
+      },
+      {
+        "date": "2020-08-16",
+        "url": "https://www.pref.nagasaki.jp/koho/governor/kaiken/index.html",
+        "text": "知事からのメッセージを知事のページに変更しました"
+      },
+      {
         "date": "2020-08-10",
         "url": "https://www.pref.nagasaki.jp/shared/uploads/2020/08/1597039412.pdf",
         "text": "8月9日、長崎県内167例目（諫早市）の新型コロナウイルス感染症の陽性者が確認されました。"

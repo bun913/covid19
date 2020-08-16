@@ -56,7 +56,7 @@ export default Vue.extend({
   },
   computed: {
     newsItems() {
-      return this.items.slice(0, 10)
+      return this.items.slice(0, 3)
     }
   },
   methods: {

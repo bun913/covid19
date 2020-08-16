@@ -343,7 +343,6 @@
   "電話のおかけ間違いが多くなっております。発信の際は今一度電話番号をお確かめの上、お間違えのないようお願いいたします。": "Wrong tel is increasing. Please check call number when you call tell.",
   "東京都緊急事態措置について": "About Nagasaki Emergency Measures",
   "県内の最新感染動向": "Latest updates on COVID-19 in Nagasaki",
-  "県民の皆様へ": "To the residents of Nagasaki",
   "県内発生（※1）": "Found in Nagasaki (*1)",
   "※2: クルーズ船": "*2: Cruise ship",
   "長崎市からのお知らせ（新型コロナウイルス感染症関連）": "COVID-19 Information (Nagasaki City)",
@@ -366,5 +365,7 @@
   "長崎県内の新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するサイトです。": "This site provides regularly updated information about COVID-19 in Nagasaki.",
   "（注）軽中重症人数はデータが無いため表示していません": "(Note) No data available for mild, moderate and severe cases",
   "（注）「入院中」には、入院調整中・宿泊療養に移行した方を含む": "(Note) 'In-hospital' includes those undergoing hospitalization adjustments and transitioning to accommodation treatment",
-  "（注）退院者数の把握には一定の期間を要しており、確認次第数値を更新している": "(Note) It takes a certain period of time to grasp the number of hospital discharges, and the value will be updated once confirmed."
+  "（注）退院者数の把握には一定の期間を要しており、確認次第数値を更新している": "(Note) It takes a certain period of time to grasp the number of hospital discharges, and the value will be updated once confirmed.",
+  "県民の皆様へ": "To the residents of Nagasaki",
+  "新型コロナウイルス感染症について": "Nagasaki Prefecture Covid19 Page"
 }

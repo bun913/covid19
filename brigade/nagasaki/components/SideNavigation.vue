@@ -201,16 +201,16 @@ export default Vue.extend({
           link: this.localePath('/nagasaki/parent')
         },
         {
-          icon: 'mdi-account-multiple',
-          title: this.$t('県民の皆様へ'),
-          link:
-            'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/'
-        },
-        {
           icon: 'mdi-domain',
           title: this.$t('企業の皆様・はたらく皆様へ'),
           link: this.localePath('/nagasaki/worker'),
           divider: true
+        },
+        {
+          icon: 'mdi-account-multiple',
+          title: this.$t('新型コロナウイルス感染症について'),
+          link:
+            'https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/'
         },
         {
           title: this.$t('知事からのメッセージ'),

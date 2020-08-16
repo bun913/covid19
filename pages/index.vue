@@ -18,6 +18,7 @@
       </div>
     </div>
 
+    <twitter-news class="mb-4" />
     <whats-new class="mb-4" :items="newsItems" />
     <nagasaki-city-news class="mb-4" />
     <static-info
@@ -51,6 +52,7 @@ import StaticInfo from '@/components/StaticInfo.vue'
 import CardRow from '@/components/cards/CardRow.vue'
 import Data from '@/data/data.json'
 import News from '@/brigade/nagasaki/data/news.json'
+import TwitterNews from '@/brigade/nagasaki/components/TwitterNews.vue'
 
 import ConfirmedCasesDetailsCard from '@/brigade/nagasaki/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/brigade/nagasaki/components/cards/ConfirmedCasesNumberCard.vue'
@@ -71,7 +73,8 @@ export default Vue.extend({
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     TestedNumberCard,
-    HealthCenterCard
+    HealthCenterCard,
+    TwitterNews
   },
   async fetch({ store, app: { $axios } }) {
     // ビルド時のデータを取得してJSに埋め込む
