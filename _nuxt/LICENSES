@@ -1,29 +1,19 @@
 /*!
-  * vue-router v3.4.3
+  * vue-router v3.4.8
   * (c) 2020 Evan You
   * @license MIT
   */
 
 /*!
-  * vue-scrollto v2.18.2
+  * vue-scrollto v2.20.0
   * (c) 2019 Randjelovic Igor
   * @license MIT
   */
 
 /*!
- * @license deepcopy.js Copyright(c) 2013 sasa+1
- * https://github.com/sasaplus1/deepcopy.js
- * Released under the MIT license.
- *
- * type-detect
- * Copyright(c) 2013 jake luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Chart.js v2.9.3
+ * Chart.js v2.9.4
  * https://www.chartjs.org
- * (c) 2019 Chart.js Contributors
+ * (c) 2020 Chart.js Contributors
  * Released under the MIT License
  */
 
@@ -33,13 +23,6 @@
  *
  * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
  * Released under the MIT license
- */
-
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <http://feross.org>
- * @license  MIT
  */
 
 /*!
@@ -62,7 +45,7 @@
  */
 
 /*!
- * vue-i18n v8.21.1 
+ * vue-i18n v8.22.1 
  * (c) 2020 kazuya kawaguchi
  * Released under the MIT License.
  */
