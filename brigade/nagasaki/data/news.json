@@ -1,6 +1,11 @@
 {
     "newsItems": [
       {
+        "date": "2020-11-02",
+        "url": "https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_jushin-sodan/",
+        "text": "「帰国者・接触者相談センター」を県内１ヶ所に集約し、新たに「受診・相談センター」として開設しました。"
+      },
+      {
         "date": "2020-10-15",
         "url": "https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/kenshou/",
         "text": "長崎県では、クルーズ船における新型コロナウイルス感染症クラスター発生事案検証報告書を作成いたしました。"
