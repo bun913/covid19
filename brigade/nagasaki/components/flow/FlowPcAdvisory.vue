@@ -4,11 +4,11 @@
       <div :class="$style.AdvisoryContents">
         <div>
           <span :class="$style.AdvisoryContentsTitle">{{
-            $t('新型コロナ受診相談窓口（日本語のみ）')
+            $t('発熱などの症状がある方')
           }}</span>
         </div>
         <div :class="[$style.AdvisoryContentsColsSentense, 'mt-4']">
-          {{ $t('帰国者・接触者 電話相談センター') }}
+          {{ $t('長崎県 受診・相談センター') }}
         </div>
         <div>
           <div :class="[$style.AdvisoryBoxContainer, $style.AdvisoryWhiteBox]">
@@ -16,8 +16,26 @@
               {{ $t('24時間対応') }}
             </span>
           </div>
+
+          <div :class="$style.Tel">
+            <a :class="$style.TelLink" href="tel:0120-409-745">
+              <img
+                :class="$style.TelLinkIcon"
+                src="/flow/phone-24px.svg"
+                aria-hidden="true"
+                :alt="$t('電話番号')"
+              />
+              0120-409-745（フリーダイヤル）
+            </a>
+          </div>
         </div>
       </div>
+
+      <hr :class="[$style.hr - body]" />
+
+      <h4 id="consult" :class="[$style.heading, $style.fzXLarge]">
+        {{ $t('感染の疑いがある場合') }}
+      </h4>
 
       <div :class="$style.AdvisoryContents">
         <div class="py-8">
@@ -61,11 +79,7 @@
           :class="[$style.AdvisoryLink, $style.AdvisoryBlockCentering, 'mt-1']"
         >
           <nuxt-link :to="localePath('/cards/health-center')">
-            {{
-              $t(
-                '緊急の場合は、各保健所の電話番号におかけください。担当者につながります。'
-              )
-            }}
+            {{ $t('緊急の場合は、長崎県受診・相談センターにおかけください。') }}
           </nuxt-link>
         </div>
         <div v-if="!['ja', 'ja-basic'].includes($i18n.locale)" class="pt-8">

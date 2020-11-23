@@ -1,13 +1,35 @@
 <template>
   <data-view :title="title" :title-id="titleId" :date="date">
     <template v-slot:button>
-      <span>
-        <p :class="[$style.alert]">
-          ※
-          緊急の場合は、各保健所の電話番号におかけください。担当者につながります。
-        </p>
-      </span>
+      <div>
+        <span :class="$style.alert">{{ $t('発熱などの症状がある方') }}</span>
+      </div>
+
+      <div>
+        <span :class="$style.alertContainer">{{
+          $t('長崎県 受診・相談センターにご相談ください（24時間対応）')
+        }}</span>
+
+        <div :class="$style.alert2">
+          <a :class="$style.TelLink" href="tel:0120-409-745">
+            <img
+              :class="$style.TelLinkIcon"
+              src="/flow/phone-24px.svg"
+              aria-hidden="true"
+              :alt="$t('電話番号')"
+            />
+            0120-409-745（フリーダイヤル・24時間対応）
+          </a>
+        </div>
+      </div>
+      <br />
     </template>
+
+    <hr :class="[$style.hr - body]" />
+
+    <div>
+      <span :class="$style.alert">{{ $t('感染の疑いがある場合の相談') }}</span>
+    </div>
 
     <v-data-table
       :ref="'displayedTable'"
@@ -24,6 +46,23 @@
 </template>
 
 <style module lang="scss">
+.alert {
+  padding: 1px;
+  font-size: 20px;
+  color: #f00;
+}
+
+.alertContainer {
+  padding: 1px;
+  font-size: 20px;
+  color: #f00;
+}
+
+.hr-body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .cardTable {
   &.v-data-table {
     th {
@@ -61,11 +100,6 @@
       }
     }
   }
-}
-.alert {
-  padding: 8px;
-  font-size: 12px;
-  color: #f00;
 }
 </style>
 

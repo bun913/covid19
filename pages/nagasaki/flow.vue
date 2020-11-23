@@ -13,13 +13,13 @@
     <div>
       <div class="Flow-Card-Button-Wrapper">
         <a
-          href="https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_nagasaki/#madoguchi"
+          href="https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_jushin-sodan/"
           target="_blank"
           rel="noopener noreferrer"
           class="Flow-Card-Button"
         >
           <span class="Flow-Card-Button-Description">
-            {{ $t('かかりつけ医に相談することもできます。') }}<br />
+            {{ $t('まずはかかりつけ医に相談してください。') }}<br />
             {{ $t('詳しくはこちらをご参照ください。') }}
           </span>
           {{ $t('詳細を見る（各保健所）') }}
