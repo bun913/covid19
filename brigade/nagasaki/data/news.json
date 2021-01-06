@@ -1,6 +1,21 @@
 {
     "newsItems": [
       {
+        "date": "2021-01-06",
+        "url": "https://twitter.com/ngs_ken_iryou/status/1346061525392392193",
+        "text": "【長崎県からのお願い】 1月2日時点で、病床占有率は50%を超える状況にあり、長崎・ 佐世保・壱岐では特にひっ迫しています。これ以上の感染拡大が続けば、入院延期等、一般診療患者に必要な医療の提供に支障が 出る可能性があります。"
+      },
+      {
+        "date": "2021-01-06",
+        "url": "https://twitter.com/ngs_ken_iryou/status/1346061998694383616",
+        "text": "人との接触の機会を極力減らしてください。 特に、長崎市・佐世保市・壱岐市においては、 徹底をお願いします。県外から戻られた方は、より慎重な対応をお願いします。"
+      },
+      {
+        "date": "2021-01-04",
+        "url": "https://www.pref.nagasaki.jp/shared/uploads/2021/01/1609755051.pdf",
+        "text": "知事記者会見資料はこちらをご覧ください"
+      },
+      {
         "date": "2020-11-02",
         "url": "https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/kansensho/corona_jushin-sodan/",
         "text": "「帰国者・接触者相談センター」を県内１ヶ所に集約し、新たに「受診・相談センター」として開設しました。"
