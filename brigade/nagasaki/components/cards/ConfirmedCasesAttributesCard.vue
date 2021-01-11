@@ -68,10 +68,14 @@ export default {
         row['性別'] = this.getTranslatedWording(row['性別'])
         row['退院'] = this.getTranslatedWording(row['退院'])
 
+        if (row['性別'] === '') row['性別'] = '-'
+
         if (row['年代'] === '10歳未満') {
           row['年代'] = this.$t('10歳未満')
         } else if (row['年代'] === '不明') {
           row['年代'] = this.$t('不明')
+        } else if (row['年代'] === '') {
+          row['年代'] = this.$t('-')
         } else {
           const age = row['年代'].substring(0, 2)
           row['年代'] = this.$t('{age}代', { age })
