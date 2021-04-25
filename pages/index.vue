@@ -19,7 +19,7 @@
     </div>
 
     <twitter-news class="mb-4" />
-    <whats-new class="mb-4" :items="newsItems" />
+    <!-- <whats-new class="mb-4" :items="newsItems" /> -->
     <nagasaki-city-news class="mb-4" />
     <static-info
       class="mb-4"
@@ -46,7 +46,7 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import { sleep } from '../store/util.js'
 import PageHeader from '@/components/PageHeader.vue'
-import WhatsNew from '@/brigade/nagasaki/components/WhatsNew.vue'
+// import WhatsNew from '@/brigade/nagasaki/components/WhatsNew.vue'
 import NagasakiCityNews from '@/brigade/nagasaki/components/NagasakiCityNews.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import CardRow from '@/components/cards/CardRow.vue'
@@ -65,7 +65,7 @@ import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 export default Vue.extend({
   components: {
     PageHeader,
-    WhatsNew,
+    // WhatsNew,
     NagasakiCityNews,
     StaticInfo,
     CardRow,
