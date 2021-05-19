@@ -12,7 +12,7 @@ const nagasakiCityNewsId = 'eb0ba50a-7a97-4029-9b75-9c6bab0568f6'
 const nagasakiOtherInfoId = '438f03f1-0ee8-466d-a5d9-e874f5367507'
 
 // Bodikからのデータ取得上限
-const limit = 3000
+const limit = 4000
 
 export const fetchNagasakiPrefectureTestedCases = () =>
   callFetchJsonp(baseUrl, nagasakiPrefectureTestedCasesId, { limit })
