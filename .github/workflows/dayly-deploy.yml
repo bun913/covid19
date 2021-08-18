@@ -2,7 +2,7 @@ name: production deploy
 
 on:
   schedule:
-    - cron: '1 8,13 * * *' # 毎日UTCの8:01と13:01にトリガーされます。（日本時間の17:01と22:01）
+    - cron: '0 8,13 * * *' # 毎日UTCの8時と13時にトリガーされます。（日本時間の17時と22時）
 
 jobs:
   deploy:
@@ -59,10 +59,6 @@ jobs:
           owner: CodeForNagasaki
           repo: covid19
           branch: production
-      - name: Create GitHub release
-        uses: rymndhng/release-on-push-action@master
-        with:
-          bump_version_scheme: patch
 
       - name: run delete_fbcache.sh
         run: |
