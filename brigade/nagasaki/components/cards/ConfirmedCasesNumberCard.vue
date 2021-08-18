@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import Data from '@/brigade/nagasaki/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChart.vue'
 
@@ -37,37 +38,24 @@ export default {
   },
   computed: {
     lastUpdate() {
-      return this.$store.state.lastUpdate
+      return this.$store.getters.lastUpdate
     },
     patientsGraph() {
-      const kensaDates = this.$store.state.kensaDates.map(x => x)
-      const groups = this.$store.state.groupsNotCruise
-      // console.log(kensaDates, 'kensaDates')
-      // console.log(groups, 'groups')
+      // デフォルト値をセット
+      let patientsGraphNotCruise = Data.patients_summary.data
 
-      if (!groups)
-        return {
-          lastUpdate: '',
-          patientsGraph: [
-            { label: '2020/04/20', transition: 1, cumulative: '' }
-          ]
-        }
+      // ロード
+      if (this.$store.state.patientsGraphNotCruise.length !== 0)
+        patientsGraphNotCruise = this.$store.state.patientsGraphNotCruise.map(
+          x => x
+        )
+      // console.log(patientsGraphNotCruise, 'patientsGraphNotCruise')
 
-      // 陽性患者の属性が更新されていて、検査実施数が更新されていない場合の対処
-      // const found = kensaDates.find(element => element === lastUpdate)
-      // if (found == null) kensaDates.push(lastUpdate)
-      // console.log(kensaDates, 'kensaDates2')
-
-      // 検査数データを作成
-      const patients = kensaDates.map(item => {
-        return {
-          日付: item,
-          小計: groups[item] ? groups[item].length : 0
-        }
-      })
+      const result = formatGraph(patientsGraphNotCruise)
+      // console.log(result, 'result')
 
       // 感染者数グラフ
-      return formatGraph(patients)
+      return result
     }
   }
 }

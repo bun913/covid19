@@ -1,9 +1,8 @@
 name: production deploy
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '1 8,13 * * *' # 毎日UTCの8:01と13:01にトリガーされます。（日本時間の17:01と22:01）
 
 jobs:
   deploy:

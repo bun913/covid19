@@ -24,6 +24,9 @@
               )
             }}
           </li>
+          <li>
+            {{ $t('（注）軽中重症人数はデータが無いため表示していません') }}
+          </li>
         </ul>
       </template>
       <confirmed-cases-details-table
@@ -59,55 +62,15 @@ export default {
   // },
   computed: {
     updatedAt() {
-      return this.$store.state.lastUpdate
+      return this.$store.getters.lastUpdate
     },
 
     confirmedCases() {
-      // 検査陽性者の状況
-      const patientsNotCruise = this.$store.state.patientsNotCruise
-      // console.log(patientsNotCruise, 'patientsNotCruise')
-      // if (!patientsNotCruise) return formatConfirmedCases(summary)
-
-      const summary = Data.main_summary
+      const summary = this.$store.state.patientsNotCruise
+        ? this.$store.state.patientsNotCruise
+        : formatConfirmedCases(Data.main_summary)
       // console.log(summary, 'summary')
-
-      const allCount = this.$store.state.allCount
-
-      const number = patientsNotCruise.length
-      const taiin = this.$store.state.patientsNotCruise.filter(
-        d => d.退院済フラグ === '1'
-      ).length
-      const dead = this.$store.state.patientsNotCruise.filter(
-        d => d.死亡フラグ === '1'
-      ).length
-      // console.log(taiin, 'taiin')
-
-      // 検査実施 人数
-      summary.value = allCount
-
-      // 陽性者数 (累積)
-      summary.children[0].value = number
-      // console.log(summary, 'summary')
-
-      // 入院中
-      summary.children[0].children[0].value = number - taiin
-
-      // 軽症
-      summary.children[0].children[0].children[0].value = 0
-
-      // 重症
-      summary.children[0].children[0].children[1].value = 0
-
-      // 退院
-      summary.children[0].children[1].value = taiin
-
-      // 死亡
-      summary.children[0].children[2].value = dead
-
-      const confirmedCases = formatConfirmedCases(summary)
-      // console.log(confirmedCases, 'confirmedCases')
-
-      return confirmedCases
+      return summary
     }
   },
   methods: {}

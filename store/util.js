@@ -6,3 +6,5 @@ export const groupBy = (array, getKey) =>
   }, {})
 
 export const reducer = (accumulator, currentValue) => accumulator + currentValue
+
+export const sleep = msec => new Promise(resolve => setTimeout(resolve, msec))

@@ -35,11 +35,11 @@
           'number-of-reports-to-covid19-consultation-desk'
       "
     />
-    <metro-card
+    <!-- <metro-card
       v-else-if="
         this.$route.params.card == 'predicted-number-of-toei-subway-passengers'
       "
-    />
+    /> -->
     <agency-card v-else-if="this.$route.params.card == 'agency'" />
 
     <health-center-card
@@ -60,7 +60,7 @@ import TestedNumberCard from '@/brigade/nagasaki/components/cards/TestedNumberCa
 import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-import MetroCard from '@/components/cards/MetroCard.vue'
+// import MetroCard from '@/components/cards/MetroCard.vue'
 import AgencyCard from '@/components/cards/AgencyCard.vue'
 import HealthCenterCard from '@/brigade/nagasaki/components/cards/HealthCenterCard.vue'
 
@@ -74,7 +74,7 @@ export default {
     InspectionPersonsNumberCard,
     TelephoneAdvisoryReportsNumberCard,
     ConsultationDeskReportsNumberCard,
-    MetroCard,
+    //    MetroCard,
     AgencyCard,
     HealthCenterCard
   },
@@ -143,10 +143,10 @@ export default {
   },
   computed: {
     lastUpdate() {
-      return this.$store.state.lastUpdate
+      return this.$store.getters.lastUpdate
     },
     updatedAt() {
-      return this.$store.state.lastUpdate
+      return this.$store.getters.lastUpdate
     }
   },
   async mounted() {

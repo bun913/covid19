@@ -69,7 +69,7 @@ export function useDayjsAdapter(nuxtI18n: NuxtAppOptions['i18n']) {
 }
 
 function setLocale(newLocale: string) {
-  let locale = newLocale
+  let locale: any = newLocale
 
   if (locale.includes('ja')) {
     locale = 'ja'

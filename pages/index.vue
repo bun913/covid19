@@ -18,7 +18,8 @@
       </div>
     </div>
 
-    <whats-new class="mb-4" :items="newsItems" />
+    <twitter-news class="mb-4" />
+    <!-- <whats-new class="mb-4" :items="newsItems" /> -->
     <nagasaki-city-news class="mb-4" />
     <static-info
       class="mb-4"
@@ -43,13 +44,15 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+import { sleep } from '../store/util.js'
 import PageHeader from '@/components/PageHeader.vue'
-import WhatsNew from '@/components/WhatsNew.vue'
+// import WhatsNew from '@/brigade/nagasaki/components/WhatsNew.vue'
 import NagasakiCityNews from '@/brigade/nagasaki/components/NagasakiCityNews.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import CardRow from '@/components/cards/CardRow.vue'
 import Data from '@/data/data.json'
 import News from '@/brigade/nagasaki/data/news.json'
+import TwitterNews from '@/brigade/nagasaki/components/TwitterNews.vue'
 
 import ConfirmedCasesDetailsCard from '@/brigade/nagasaki/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/brigade/nagasaki/components/cards/ConfirmedCasesNumberCard.vue'
@@ -58,12 +61,11 @@ import TestedNumberCard from '@/brigade/nagasaki/components/cards/TestedNumberCa
 import HealthCenterCard from '@/brigade/nagasaki/components/cards/HealthCenterCard.vue'
 
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
-const sleep = (msec: any) => new Promise(resolve => setTimeout(resolve, msec))
 
 export default Vue.extend({
   components: {
     PageHeader,
-    WhatsNew,
+    // WhatsNew,
     NagasakiCityNews,
     StaticInfo,
     CardRow,
@@ -71,7 +73,8 @@ export default Vue.extend({
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     TestedNumberCard,
-    HealthCenterCard
+    HealthCenterCard,
+    TwitterNews
   },
   async fetch({ store, app: { $axios } }) {
     // ビルド時のデータを取得してJSに埋め込む
@@ -91,7 +94,7 @@ export default Vue.extend({
   },
   computed: {
     lastUpdate() {
-      return this.$store.state.lastUpdate
+      return this.$store.getters.lastUpdate
     },
     updatedAt() {
       return convertDatetimeToISO8601Format(this.$data.Data.lastUpdate)
@@ -99,7 +102,7 @@ export default Vue.extend({
   },
   async mounted() {
     // 動的に最新情報を取得する
-    await sleep(1000)
+    await sleep(50)
     await this.$store.dispatch('GET_BODIK_JSONP')
   },
   head(): MetaInfo {

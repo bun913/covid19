@@ -1,7 +1,31 @@
-Tokyo Covid-19 response site contributors
+Nagasaki Covid-19 response site contributors
 ============================================
 
 本サイトにご協力いただいた皆様
+
+| Name (link) | GitHub | Twitter | Contribution |
+| --- | --- | --- | --- |
+| Masato Yokoyama (Code for Nagasaki) |  | | Project facilitation |
+| Seiichi Higuchi (Code for Nagasaki) |  | | Project facilitation |
+| kitadakyou | | | Coding |
+| tkt989 | | | Coding |
+| Kensuke Kanzaki | | [@curasutas](https://twitter.com/curasutas)  | Coding |
+| MATSUMOTO RYOTA| | [@pinografico](https://twitter.com/pinografico)  | Illustration |
+| Atsushi Susgasaki (Code for Nagasaki) |  | | Coding |
+
+ご協力に感謝です！！！
+
+お名前の掲載をご希望の方は，[#7](https://github.com/CodeForNagasaki/covid19/issues/7)にコメントをお願いします。
+
+If you want to add your name, please comment on [#7](https://github.com/CodeForNagasaki/covid19/issues/7).
+
+
+***
+
+### On based Site
+
+#### Tokyo Covid-19 response site contributors
+
 
 | Name (link) | GitHub | Twitter | Contribution |
 | --- | --- | --- | --- |
@@ -150,9 +174,5 @@ Tokyo Covid-19 response site contributors
 | Hiroki Kobayashi | [@khsacc](https://github.com/khsacc) | [@khsacc](https://twitter.com/khsacc) | Coding |
 
 ご協力に感謝です！！！
-
-お名前の掲載をご希望の方は，[#654](https://github.com/tokyo-metropolitan-gov/covid19/issues/654)にコメントをお願いします。
-
-If you want to add your name, please comment on [#654](https://github.com/tokyo-metropolitan-gov/covid19/issues/654).
 
 ![nyan](https://i.gyazo.com/f04e7468ea6e4bb6e87f6817fea980f9.gif)

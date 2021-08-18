@@ -339,6 +339,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     displayOption() {
       const unit = this.unit
       const sumArray = this.eachArraySum(this.chartData)
+
       const data = this.chartData
       const cumulativeData = this.chartData.map(item => {
         return this.cumulative(item)
@@ -351,6 +352,8 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             label: tooltipItem => {
               let casesTotal, cases
               if (this.dataKind === 'transition') {
+                if (!sumArray[tooltipItem.index!]) return ''
+
                 casesTotal = sumArray[tooltipItem.index!].toLocaleString()
                 cases = data[tooltipItem.datasetIndex!][
                   tooltipItem.index!

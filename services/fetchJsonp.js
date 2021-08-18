@@ -1,7 +1,12 @@
 import fetchJsonp from 'fetch-jsonp'
 
-export function callFetchJsonp(baseUrl, endpoint) {
-  const fullUrl = !endpoint.includes(baseUrl) ? baseUrl + endpoint : endpoint
+export function callFetchJsonp(baseUrl, endpoint, params = {}) {
+  let fullUrl = !endpoint.includes(baseUrl) ? baseUrl + endpoint : endpoint
+  fullUrl +=
+    '&' +
+    Object.entries(params)
+      .map(([key, value]) => `${key}=${value}`)
+      .join('&')
 
   return fetchJsonp(fullUrl)
     .then(res => {

@@ -8,11 +8,68 @@
         $t(
           '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
         )
-      }}<br />
+      }}
+      <i18n
+        path="開発は{codeForNagasaki}と長崎在住エンジニア、長崎出身エンジニア、イラストレーターなど有志で行っています。"
+        tag="span"
+      >
+        <template #codeForNagasaki>
+          <a target="_blank" rel="noopener" href="https://c4nagasaki.org/">{{
+            $t('Code For Nagasaki')
+          }}</a>
+        </template>
+      </i18n>
+
+      <br /><br />
+
+      <i18n
+        path="複製・改変が許されたオープンソースライセンスで公開されている、{tokyoCovid19Site}の{tokyoCovid19SiteGitHub}を利用しています。"
+        tag="span"
+      >
+        <template #tokyoCovid19Site>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://stopcovid19.metro.tokyo.lg.jp/"
+            >{{ $t('東京都公式新型コロナウイルス対策サイト') }}</a
+          >
+        </template>
+        <template #tokyoCovid19SiteGitHub>
+          <a
+            target="_blank"
+            href="https://github.com/tokyo-metropolitan-gov/covid19"
+            rel="noopener"
+            >{{ $t('仕組み') }}</a
+          >
+        </template>
+      </i18n>
+
+      <br />
       <br />
       {{
         $t(
-          '東京都による公式情報と客観的な数値をわかりやすく伝えることで、東京都にお住まいの方や、東京都内に拠点を持つ企業の方、東京都を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
+          '長崎県による公式情報と客観的な数値をわかりやすく伝えることで、長崎県にお住まいの方や長崎県に拠点を持つ企業の方、長崎県を訪れる方が現状を把握して適切な対策を取れるようにすることを目的としています。'
+        )
+      }}
+      <br />
+      <br />
+      <i18n
+        path="紹介などに{infoPrintPage}のページをぜひご利用ください。"
+        tag="span"
+      >
+        <template #infoPrintPage>
+          <a
+            target="_blank"
+            rel="noopener"
+            :href="localePath('/nagasaki/print/info')"
+            >{{ $t('こちら') }}</a
+          >
+        </template>
+      </i18n>
+      <br />
+      {{
+        $t(
+          '複製・配布は自由です。ご自由にコピーまたはプリントアウトしてご利用ください。'
         )
       }}
     </StaticCard>
@@ -279,6 +336,39 @@
           {{ $t('そして戦って日常') }}
         </span>
       </div>
+    </StaticCard>
+
+    <StaticCard>
+      <h3>{{ $t('本サイトにご協力いただいた皆様') }}</h3>
+      <ul>
+        <li>Masato Yokoyama</li>
+        <li>Seiichi Higuchi</li>
+        <li>
+          <a
+            href="https://github.com/CodeForNagasaki/covid19/commits?author=sentakuhakase"
+            target="”_blank”"
+            >Kensuke Kanzaki</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/CodeForNagasaki/covid19/commits?author=kitadakyou"
+            target="”_blank”"
+            >kitadakyou</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/CodeForNagasaki/covid19/commits?author=tkt989"
+            target="”_blank”"
+            >tkt989</a
+          >
+        </li>
+
+        <li>
+          <a href="https://pinografi.com" target="”_blank”">MATSUMOTO RYOTA</a>
+        </li>
+      </ul>
     </StaticCard>
   </div>
 </template>

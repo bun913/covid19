@@ -7,13 +7,7 @@
         </v-icon>
         {{ $t('最新のお知らせ') }}
       </h3>
-      <span class="alert"
-        >※
-        <a href="https://twitter.com/ngs_ken_iryou" target="_blank"
-          >長崎県医療政策課のTwitter情報を表示しています。</a
-        ></span
-      >
-      <!-- <span class="WhatsNew-link-to-emergency-page">
+      <span class="WhatsNew-link-to-emergency-page">
         <v-icon size="20" class="WhatsNew-link-to-emergency-page-icon">
           mdi-bullhorn
         </v-icon>
@@ -22,7 +16,7 @@
         >
           {{ $t('東京都緊急事態措置について') }}
         </external-link>
-      </span> -->
+      </span>
     </div>
     <ul class="WhatsNew-list">
       <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
@@ -56,7 +50,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// import ExternalLink from '@/components/ExternalLink.vue'
+import ExternalLink from '@/components/ExternalLink.vue'
 
 import {
   convertDateByCountryPreferTimeFormat,
@@ -64,9 +58,7 @@ import {
 } from '@/utils/formatDate'
 
 export default Vue.extend({
-  components: {
-    // ExternalLink
-  },
+  components: { ExternalLink },
   props: {
     items: {
       type: Array,
@@ -88,18 +80,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.alert {
-  padding: 8px;
-  color: #f00;
-  font-size: 12px;
-}
-.alert a:link,
-.alert a:visited,
-.alert a:hover,
-.alert a:active {
-  color: #f00;
-}
-
 .WhatsNew {
   @include card-container();
 

@@ -205,6 +205,8 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     displayInfo() {
       if (this.dataKind === 'transition') {
+        // if (!this.chartData.slice(-1)[0]) return ""
+
         return {
           lText: `${this.chartData.slice(-1)[0].transition.toLocaleString()}`,
           sText: `${this.chartData.slice(-1)[0].label} ${this.$t(
