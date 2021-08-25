@@ -12,16 +12,17 @@ const nagasakiCityNewsId = 'eb0ba50a-7a97-4029-9b75-9c6bab0568f6'
 const nagasakiOtherInfoId = '438f03f1-0ee8-466d-a5d9-e874f5367507'
 
 // Bodikからのデータ取得上限
-const limit = 10000
+const limit = 5000
+const sort = '_id desc'
 
 export const fetchNagasakiPrefectureTestedCases = () =>
-  callFetchJsonp(baseUrl, nagasakiPrefectureTestedCasesId, { limit })
+  callFetchJsonp(baseUrl, nagasakiPrefectureTestedCasesId, { limit, sort })
 export const fetchNagasakiPrefectureConfirmedCases = () =>
-  callFetchJsonp(baseUrl, nagasakiPrefectureConfirmedCasesId, { limit })
+  callFetchJsonp(baseUrl, nagasakiPrefectureConfirmedCasesId, { limit, sort })
 export const fetchNagasakiCityNews = () =>
-  callFetchJsonp(baseUrl, nagasakiCityNewsId, { limit })
+  callFetchJsonp(baseUrl, nagasakiCityNewsId, { limit, sort })
 export const fetchNagasakiOtherInfo = () =>
-  callFetchJsonp(baseUrl, nagasakiOtherInfoId, { limit })
+  callFetchJsonp(baseUrl, nagasakiOtherInfoId, { limit, sort })
 
 export const axiosNagasakiPrefectureTestedCases = axios =>
   axios.$get(baseUrl + nagasakiPrefectureTestedCasesId, { params: { limit } })
