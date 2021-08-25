@@ -151,7 +151,7 @@ export default {
   },
   async mounted() {
     // 動的に最新情報を取得する
-    await this.$store.dispatch('GET_BODIK_JSONP')
+    // await this.$store.dispatch('GET_BODIK_JSONP')
   },
   head() {
     const url = 'https://nagasaki.stopcovid19.jp'
