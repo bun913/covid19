@@ -108,15 +108,19 @@ export const actions = {
     try {
       const result1 = await bodikApi.axiosNagasakiPrefectureTestedCases($axios)
       // console.log(result1, 'result1')
-      if (result1.result.records)
-        commit('setPrefectureTestedCases', result1.result.records)
+      if (result1.result.records) {
+        const result = result1.result.records.reverse()
+        commit('setPrefectureTestedCases', result)
+      }
 
       const result2 = await bodikApi.axiosNagasakiPrefectureConfirmedCases(
         $axios
       )
       // console.log(result2, 'result2')
-      if (result2.result.records)
-        commit('PrefectureConfirmedCases', result2.result.records)
+      if (result2.result.records) {
+        const result = result2.result.records.reverse()
+        commit('PrefectureConfirmedCases', result)
+      }
 
       const newsRes = await bodikApi.axiosNagasakiCityNews($axios)
       if (newsRes.result.records)
@@ -141,12 +145,18 @@ export const actions = {
       // 長崎県新型コロナウイルス感染症検査実施数のロード
       const result1 = await bodikApi.fetchNagasakiPrefectureTestedCases()
       // console.log(result1, 'fetchNagasakiPrefectureTestedCases')
-      if (result1.records) commit('setPrefectureTestedCases', result1.records)
+      if (result1.records) {
+        const result = result1.records.reverse()
+        commit('setPrefectureTestedCases', result)
+      }
 
       // 長崎県新型コロナウイルス感染症陽性患者発表情報のロード
       await sleep(500)
       const result2 = await bodikApi.fetchNagasakiPrefectureConfirmedCases()
-      if (result2.records) commit('PrefectureConfirmedCases', result2.records)
+      if (result2.records) {
+        const result = result2.recordsreverse()
+        commit('PrefectureConfirmedCases', result)
+      }
 
       await sleep(500)
       const newsRes = await bodikApi.fetchNagasakiCityNews()
