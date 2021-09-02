@@ -8,6 +8,9 @@
         <span :class="[$style.alert]"
           >※ データの更新は平日（県庁稼働日）のお昼頃になります。</span
         >
+        <span :class="[$style.alert]"
+          >※ 古いデータが表示される場合には画面を再読込してください。</span
+        >
       </div>
 
       <div
