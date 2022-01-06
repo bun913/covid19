@@ -6,7 +6,7 @@
 
 | アプリケーション名 | バージョン(指定がある場合のみ、記載する) | インストール条件 |
 | ------- | ------- | ------- |
-|[Node.js](https://nodejs.org/ja/)|10.19.0以上|必須|
+|[Node.js](https://nodejs.org/ja/)|16.13.0以上|必須|
 |[Visual Studio Code](https://code.visualstudio.com/)| |Visual Studio Codeを利用する場合|
 |[yarn](https://classic.yarnpkg.com/ja/)| |本プログラムをyarnで実行する場合|
 |[docker compose](https://docs.docker.com/compose/install/)| |本プログラムをdocker composeで実行する場合|
@@ -124,7 +124,7 @@ $ docker-compose run --rm app yarn install
 
 ## 3. 本番環境/その他の判定
 
-`process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。  
+`process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。
 テスト環境のみで実行したい処理がある場合は、こちらの値をご利用ください。
 
 ---
@@ -143,7 +143,7 @@ $ docker-compose run --rm app yarn install
 
 ## 5. ブランチルール
 
-development 以外は、Pull Request は禁止です。  
+development 以外は、Pull Request は禁止です。
 Pull Request を送る際のブランチは、以下のネーミングルールに従ったブランチにしてください。
 
 | 種類 | ブランチのネーミングルール |
