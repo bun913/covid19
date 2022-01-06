@@ -29,7 +29,7 @@ Please check [How to translate](./../../TRANSLATION.md) doc.
 
 ### Cómo Configurar Entornos
 
-- Versión requerida de Node.js: 10.19.0 o superior
+- Versión requerida de Node.js: 16.13.0 o superior
 
 **Use yarn**
 ```bash
@@ -78,7 +78,7 @@ $ docker-compose up --build
 
 ### Detect production/others environment
 
-On the production environment, `'production'` is assigned to `process.env.GENERATE_ENV` variable, on the other case `'development'` is assigned to the variable.  
+On the production environment, `'production'` is assigned to `process.env.GENERATE_ENV` variable, on the other case `'development'` is assigned to the variable.
 Please use the variable to detect which environment is used at the runtime.
 
 [/PLEASE TRANSLATE ME]
@@ -101,7 +101,7 @@ y luego el sitio de desarrollo (https://dev-covid19-tokyo.netlify.app/) también
 Pull Request is allowed only for `development` and `dev-hotfix`.
 Please use the following naming rules for the branch when sending a Pull Request.
 
-Feature implementation: feature/#{ISSUE_ID}-#{branch_title_name}  
+Feature implementation: feature/#{ISSUE_ID}-#{branch_title_name}
 Hotfix commit: hotfix/#{ISSUE_ID}-{branch_title_name}
 
 #### Basic branch

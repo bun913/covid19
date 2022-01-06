@@ -32,7 +32,7 @@
 
 ### 개발환경을 구축하는 방법
 
-- 필요한 Node.js 버젼: 10.19.0 이상
+- 필요한 Node.js 버젼: 16.13.0 이상
 
 **yarn을 사용할 경우**
 ```bash
@@ -86,7 +86,7 @@ $ docker-compose run --rm app yarn install
 
 ### 프로덕션/기타 환경 감지
 
-프로덕션 환경에서, `'production'` 은 `process.env.GENERATE_ENV` 변수에 할당되고, 다른 환경에서는 `'development'`가 변수에 할당됩니다.  
+프로덕션 환경에서, `'production'` 은 `process.env.GENERATE_ENV` 변수에 할당되고, 다른 환경에서는 `'development'`가 변수에 할당됩니다.
 런타임에서 사용할 환경을 감지하려면 이 변수를 사용하세요.
 
 ### 스테이징 환경 및 운영 환경으로 반영 방법
@@ -102,8 +102,8 @@ $ docker-compose run --rm app yarn install
 풀 리퀘스트(Pull Request)는 오직 `development`, `dev-hotfix`에서만 가능합니다.
 만약, 풀 리퀘스트(Pull Request)를 전달할 때 다음의 네이밍(naming) 규칙를 따라 사용해주시기 바랍니다.
 
-기능 구현: feature/#{ISSUE_ID}-#{branch_title_name}  
-핫픽스(hotfix) 커밋: hotfix/#{ISSUE_ID}-{branch_title_name} 
+기능 구현: feature/#{ISSUE_ID}-#{branch_title_name}
+핫픽스(hotfix) 커밋: hotfix/#{ISSUE_ID}-{branch_title_name}
 
 #### 기본 브랜치(branch)
 | 목적 | 브랜치 | 확인 URL | 비고 |

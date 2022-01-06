@@ -2,7 +2,7 @@ name: production deploy
 
 on:
   schedule:
-    - cron: '0,30 4,5,6,7,8,9,10,13 * * *' # 毎日、日本時間の13時から30分おき、20時までと22時、UTCの4時-13時）にトリガーされます
+    - cron: '0,30 4,5,6,7,8,9,10,13 * * *' # 毎日、日本時間の13時から30分おき、20時までと22時（UTCの4時-13時）にトリガーされます
 
 jobs:
   deploy:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.16.0'
+          node-version: '16.13.0'
 
       - name: Cache dependencies
         uses: actions/cache@v1
@@ -26,7 +26,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      
+
       - run: yarn install --frozen-lockfile
       - run: yarn run test
       - name: generate
@@ -50,7 +50,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: production
-          
+
       - name: Enable "include administrators" branch protection
         uses: benjefferies/branch-protection-bot@master
         if: always()  # Force to always run this step to ensure "include administrators" is always turned back on

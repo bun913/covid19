@@ -28,7 +28,7 @@ Por favor, confira [Como traduzir](./../../TRANSLATION.md).
 
 ### Como configurar o ambiente
 
-- Requer Node.js versão: 10.19.0 ou mais nova
+- Requer Node.js versão: 16.13.0 ou mais nova
 
 **Usando yarn**
 ```bash
@@ -98,7 +98,7 @@ e o site de produção (https://dev-covid19-tokyo.netlify.app/) será então atu
 Pull Requests são permitidos apenas para as branches `development` e `dev-hotfix`.
 Por favor, use as seguintes regras para nomeação de branch quando estiver enviando um Pull Request.
 
-Implementando uma funcionalidade: feature/#{ISSUE_ID}-#{título_da_branch}  
+Implementando uma funcionalidade: feature/#{ISSUE_ID}-#{título_da_branch}
 Commit de Hotfix: hotfix/#{ISSUE_ID}-{título_da_branch}
 
 #### Branches principais

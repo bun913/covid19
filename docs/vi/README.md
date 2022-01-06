@@ -27,7 +27,7 @@ Please check [How to translate](./../../TRANSLATION.md) doc.
 
 ### Xây dựng môi trường
 
-- Node.js phiên bản: 10.19.0 hoặc cao hơn
+- Node.js phiên bản: 16.13.0 hoặc cao hơn
 
 **Nếu dùng yarn**
 ```bash
@@ -74,7 +74,7 @@ $ docker-compose up --build
 
 ### Detect production/others environment
 
-On the production environment, `'production'` is assigned to `process.env.GENERATE_ENV` variable, on the other case `'development'` is assigned to the variable.  
+On the production environment, `'production'` is assigned to `process.env.GENERATE_ENV` variable, on the other case `'development'` is assigned to the variable.
 Please use the variable to detect which enviroinment is used at the runtime.
 
 [/PLEASE TRANSLATE ME]

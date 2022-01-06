@@ -29,7 +29,7 @@
 
 ### การติดตั้งสภาพแวดล้อมเพื่อการพัฒนา
 
-- ต้องการ Node.js รุ่น 10.19.0 หรือสูงกว่า
+- ต้องการ Node.js รุ่น 16.13.0 หรือสูงกว่า
 
 **ใช้ yarn**
 ```bash
@@ -100,7 +100,7 @@ $ docker-compose run --rm app yarn install
 pull request เปิดรับได้ที่ `development` และ `dev-hotfix` เท่านั้น
 โปรดตั้งชื่อ branch ดังนี้
 
-การสร้างฟีเจอร์: feature/#{ISSUE_ID}-#{branch_title_name}  
+การสร้างฟีเจอร์: feature/#{ISSUE_ID}-#{branch_title_name}
 hotfix commit: hotfix/#{ISSUE_ID}-{branch_title_name}
 
 #### branch หลัก
