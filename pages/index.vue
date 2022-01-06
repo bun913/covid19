@@ -5,12 +5,12 @@
       <div class="UpdatedAt">
         <span>{{ $t('最終更新') }} </span>
         <time :datetime="updatedAt">{{ lastUpdate }}</time>
-        <span :class="[$style.alert]"
-          >※ データの更新は平日（県庁稼働日）のお昼頃になります。</span
-        >
-        <div :class="[$style.alert]"
-          >※ 古いデータが表示される場合には画面を再読込してください。</div
-        >
+        <span :class="[$style.alert]">{{
+          $t('※ データの更新は平日（県庁稼働日）のお昼頃になります。')
+        }}</span>
+        <div :class="[$style.alert]">
+          {{ $t('※ 古いデータが表示される場合には画面を再読込してください。') }}
+        </div>
       </div>
 
       <div
