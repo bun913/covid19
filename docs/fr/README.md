@@ -24,7 +24,7 @@ Ce logiciel est sous [license MIT](./../../LICENSE.txt).
 
 ### Comment préparer l'environement de développement
 
-- Version de Node.js requise: 10.19.0 or plus récent
+- Version de Node.js requise: 16.13.0 or plus récent
 
 **En utilisant yarn**
 ```bash
@@ -85,7 +85,7 @@ $ docker-compose run --rm app yarn install
 
 ### Detecter le type d'environnement
 
-Dans l'environnement de production, la valeur `'production'` est attribuée à la variable `process.env.GENERATE_ENV`, le reste du temps la valeur assignée est `'development'`.  
+Dans l'environnement de production, la valeur `'production'` est attribuée à la variable `process.env.GENERATE_ENV`, le reste du temps la valeur assignée est `'development'`.
 Veuillez utiliser cette variable pour détecter quel type d'environnement est executé.
 
 ### Deployer vers les environnements Staging & Production
@@ -104,7 +104,7 @@ et le site development (https://dev-covid19-tokyo.netlify.app/) est aussi mis-à
 Les Pull Request sont permises seulement sur `development`, et `dev-hotfix`.
 Veuillez utiliser le schema suivant pour nommer vos Pull Request:
 
-Nouvelle feature: feature/#{ISSUE_ID}-#{nom_de_la_branche}  
+Nouvelle feature: feature/#{ISSUE_ID}-#{nom_de_la_branche}
 Hotfix: hotfix/#{ISSUE_ID}-{nom_de_la_branche}
 
 #### Branches basiques
